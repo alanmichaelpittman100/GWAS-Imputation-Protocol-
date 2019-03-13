@@ -14,6 +14,9 @@ modified HRC checking tool -
 HRC-1000G-check-bim-v4.2_AP_MODIFIED.pl
 
 Original Mccarthy group https://www.well.ox.ac.uk/~wrayner/tools/ 
+W.Rayner 2015 
+wrayner@well.ox.ac.uk
+
 
 ## Make following ouput directories in impuatation folder 
 
