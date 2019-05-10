@@ -28,15 +28,15 @@
 
 **For pre-Imputation-Processing**<br/>
 Run: pipeline_pre_Imputation_Checking_Formatting.sh
-
+<br/>
 Files inside imputation/pre-phased are now ready to be uploaded to Michigan Imputation Server https://imputationserver.readthedocs.io/en/latest/
 
 **Michigan Imputation Server recommended parameters:**<br/>
-Reference Panel: HRC r1.1 2016
-Input Files: .vcf.gz and .vcf.tbi files inside the /imputation/pre-phased_vcfs directory
-Phasing: ShapeIT v2.r790 (unphased)
+* Reference Panel: HRC r1.1 2016
+* Input Files: .vcf.gz and .vcf.tbi files inside the /imputation/pre-phased_vcfs directory
+* Phasing: ShapeIT v2.r790 (unphased)
 
 **For post-Imputation-Processing**<br/>
-Download your results (zip files) from Michigan Imputation Server inside the /imputation/ folder you created.
+Download your results (zip files) from Michigan Imputation Server inside the /imputation/ folder you created.<br/>
 Output: A set of plink bfiles containing all the chromosomes merged. Only the variants with R2 quality greater than the threshold provided will be included in the file. The varians are now annotated to rsid numbers where possible. 
 ## 
