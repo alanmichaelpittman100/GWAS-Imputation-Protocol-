@@ -123,5 +123,9 @@ for(f in bfiles){
 cat('-GOOD TO GO!\n')
 cat('\n')
 
+#Concat chromosomes
 bfiles_str = paste(bfiles,collapse=" ")
 system(paste0("export PERL5LIB=",vcfperl,"; ",vcfconcat," ",bfiles_str," | gzip -c > ",impute_dir,outNAME,".vcf.gz"))
+
+#Convert vcf to plink2 pfiles
+system(paste0(plink2," --vcf ",impute_dir,outNAME,".vcf.gz --make-pgen --out ",impute_dir,outNAME))
