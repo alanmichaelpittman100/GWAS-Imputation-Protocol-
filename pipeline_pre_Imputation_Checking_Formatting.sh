@@ -14,17 +14,17 @@ file=$1 #specify your input file here
 #--------------------------------------------------------------------------------------------
 #resources
 
-plink=/homes/athosnew/Genetics_Centre_Bioinformatics/resourses/plink_linux_x86_64/plink
-SHAPEIT=/homes/athosnew/Genetics_Centre_Bioinformatics/resourses/shapeit.v2.904/bin/shapeit
-checkVCF=/homes/athosnew/Alan/Alan_Bioinformatics_Projects/imputation/checkVCF.py
+plink=/resourses/plink_linux_x86_64/plink
+SHAPEIT=/resourses/shapeit.v2.904/bin/shapeit
+checkVCF=/imputation/checkVCF.py
 
 #Dirs
 
-inPLINK=/homes/athosnew/Alan/Alan_Bioinformatics_Projects/imputation/starting_plink_files
-freqOUT=/homes/athosnew/Alan/Alan_Bioinformatics_Projects/imputation/frequency_outputs
-updatedOUT=/homes/athosnew/Alan/Alan_Bioinformatics_Projects/imputation/updated_plink_files
-PhasedOUT=/homes/athosnew/Alan/Alan_Bioinformatics_Projects/imputation/shapeit_phase_out
-VCF_out=/homes/athosnew/Alan/Alan_Bioinformatics_Projects/imputation/pre-phased_vcfs
+inPLINK=/imputation/starting_plink_files
+freqOUT=/imputation/frequency_outputs
+updatedOUT=/imputation/updated_plink_files
+PhasedOUT=/imputation/shapeit_phase_out
+VCF_out=/imputation/pre-phased_vcfs
 
 #--------------------------------------------------------------------------------------------
 
@@ -73,10 +73,10 @@ echo " "
 sleep 1
 
 ###Execute checking script:
-perl /homes/athosnew/Alan/Alan_Bioinformatics_Projects/imputation/HRC-1000G-check-bim-v4.2_AP_MODIFIED.pl \
+perl /imputation/HRC-1000G-check-bim-v4.2_AP_MODIFIED.pl \
  -b $inPLINK/${file}.bim \
  -f $freqOUT/${file}.frq \
- -r /homes/athosnew/Genetics_Centre_Bioinformatics/resourses/HRC_reference/1000GP_Phase3_combined.legend \
+ -r /resourses/HRC_reference/1000GP_Phase3_combined.legend \
  -p EUR -g
  
 sleep 1
